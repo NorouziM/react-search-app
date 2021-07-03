@@ -1,0 +1,17 @@
+{
+  "engineName": "norouzi",
+  "endpointBase": "https://node-modules.ent.eastus2.azure.elastic-cloud.com",
+  "searchKey": "search-1byz7anv6wd4581d42yvmv62",
+  "resultFields": [
+    "abstract",
+    "title",
+    "url",
+    "journal",
+    "pdf_json_files",
+    "publish_time",
+    "authors",
+    "id"
+  ],
+  "titleField": "title",
+  "urlField": "url"
+}

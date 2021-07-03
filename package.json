@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@elastic/react-search-ui": "^1.7.0",
+    "@elastic/react-search-ui-views": "^1.7.0",
+    "@elastic/search-ui-app-search-connector": "^1.7.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "prop-type": "^0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-highlight-words": "^0.17.0",
+    "react-loading-overlay": "^1.0.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
