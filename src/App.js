@@ -4,8 +4,6 @@ import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 
 import Result from "./Result";
 
-import { BrowserRouter as Router} from "react-router-dom";
-
 import "@elastic/react-search-ui-views/lib/styles/styles.css";
 
 import "./App.css";
@@ -48,11 +46,9 @@ const config = {
 };
 
 export default function App() {
-  const params = new URLSearchParams(window.location.search);
-  const searchedWord = params?.get("q")?.trim();
+
 
   return (
-    <Router>
     <SearchProvider config={config}>
       <WithSearch
         mapContextToProps={({ results, isLoading,searchTerm }) => ({
@@ -85,8 +81,8 @@ export default function App() {
                     bodyContent={<Result searchTerm={searchTerm} results={results} />}
                     bodyHeader={
                       <>
-                        {!!searchedWord && <PagingInfo />}
-                        {!!searchedWord && <ResultsPerPage />}
+                        {!!searchTerm && <PagingInfo />} 
+                        {!!searchTerm && <ResultsPerPage />}
                       </>
                     }
                     bodyFooter={<Paging />}
@@ -98,6 +94,5 @@ export default function App() {
         }}
       </WithSearch>
     </SearchProvider>
-    </Router>
   );
 }

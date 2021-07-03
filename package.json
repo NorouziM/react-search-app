@@ -1,6 +1,7 @@
 {
   "name": "react-search-app-by-norouzi",
   "version": "0.1.0",
+  "author": "NorouziM",
   "private": true,
   "dependencies": {
     "@elastic/react-search-ui": "^1.7.0",
